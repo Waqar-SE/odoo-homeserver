@@ -1,0 +1,19 @@
+services:
+  odoo:
+    build: .
+    container_name: odoo
+  
+  database:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: odoo
+      POSTGRES_PASSWORD: odoo-homeserver
+      POSTGRES_DB: odoo-homeserver
+    volumes:
+      - database:/var/lib/postgresql/data
+  
+  server:
+    build: 
+      context: .
+      dockerfile: dockerfile
+
