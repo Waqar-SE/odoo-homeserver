@@ -1,0 +1,7 @@
+*
+!odoo
+!addons
+
+!odoo-bin
+!requirements.txt
+!setup.py
