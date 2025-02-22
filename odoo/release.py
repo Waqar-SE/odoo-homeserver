@@ -35,7 +35,3 @@ author_email = 'info@odoo.com'
 license = 'LGPL-3'
 
 nt_service_name = "odoo-server-" + series.replace('~','-')
-
-version += '-20250221'
-
-repos_heads = {'odoo': '949ed6f30f539dd787594511751bda0e714a5409', 'enterprise': '1bec23c8f9e60b27229154c8361550368d2ff123', 'design-themes': '9bb68b37179f768aa0c66023ad1ebd06c26a4e62'}
